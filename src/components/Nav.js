@@ -17,7 +17,7 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <Fade top>
+    <Fade top delay={2200}>
       <AppBar position="sticky" className={classes.center}>
         <Toolbar>
           <Box m={2}>1</Box>
