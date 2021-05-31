@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
     // height: "100vh",
     // spacing: 0,
     // justify: "space-around",
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    background: "#2e2631",
+    // background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
   },
 }));
 function Footer() {
@@ -17,11 +18,16 @@ function Footer() {
   return (
     <Fade bottom delay={900}>
       <Box
+        id="footer"
         className={classes.details}
         ////////////
         boxShadow={3}
         m={1}
         p={1}
+        style={{
+          borderRadius: 10,
+          border: 1,
+        }}
       >
         FOOTER
       </Box>

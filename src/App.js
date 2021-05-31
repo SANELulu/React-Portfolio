@@ -9,9 +9,8 @@ function App() {
   return (
     <div>
       <Nav />
-
       <Welcome />
-      <Details />
+      {/* <Details /> */}
       <Resume />
       <Footer />
     </div>
