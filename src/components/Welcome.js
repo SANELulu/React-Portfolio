@@ -77,7 +77,8 @@ function Welcome() {
               style={{
                 borderRadius: 16,
                 border: 1,
-                maxWidth: "300px",
+                minWidth: "300px",
+                maxWidth: "400px",
                 raised: true,
                 background: "#aeaeae",
                 // width: "auto",
