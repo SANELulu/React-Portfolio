@@ -6,13 +6,10 @@ import {
   Grid,
   Card,
   CardActionArea,
-  CardMedia,
   CardContent,
-  CardActions,
-  Button,
 } from "@material-ui/core";
 import { Fade } from "react-reveal";
-import ParticlesBg from "particles-bg";
+
 import me from "../assets/lulu.jpg";
 import Details from "../components/Details";
 
@@ -20,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   fullScreen: {
     //this is to make the welcome components a full screen component
     // width: "100vw",
-    height: "100vh",
+    // height: "100vh",
     spacing: 0,
     justify: "space-around",
 
@@ -39,14 +36,13 @@ function Welcome() {
       justify="center"
       // alignItems="left"
       style={{
-        background: "linear-gradient(180deg, #2a292b 60%, #aeaeae 90%)",
+        background: "linear-gradient(180deg, #3c383e 60%, #232024 90%)",
       }}
     >
-      <Grid item xs={3}>
+      <Grid item xs={6} sm={3}>
         <Box
           id="welcome"
           className={classes.fullScreen}
-          ////////////
           boxShadow={3}
           m={1}
           p={1}
@@ -70,7 +66,7 @@ function Welcome() {
         </Box>
       </Grid>
       <Grid item xs={4} sm={4}>
-        <Box m={1} p={3}>
+        <Box m={1} pt={3}>
           {/* //////////// */}
           <Fade right delay={1300}>
             <Card
@@ -80,7 +76,8 @@ function Welcome() {
                 minWidth: "300px",
                 maxWidth: "400px",
                 raised: true,
-                background: "#aeaeae",
+                // background: "#aeaeae",
+                background: "linear-gradient(-35deg, #6fabf6 10%, #9fd1f7 60%)",
                 // width: "auto",
               }}
             >
@@ -90,10 +87,10 @@ function Welcome() {
                 //   background: "#aeaeae",
                 // }}
                 >
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography gutterBottom variant="body1" component="h2">
                     Hello,
                     <br />
-                    my name is Lucas Diaz.
+                    my name is Lucas Díaz.
                   </Typography>
                   <Typography
                     variant="body2"
@@ -110,7 +107,7 @@ function Welcome() {
           {/* //////// */}
         </Box>
         <Details />
-        <Details />
+        {/* <Details2 /> */}
       </Grid>
     </Grid>
   );

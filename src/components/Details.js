@@ -8,7 +8,11 @@ import {
   Typography,
   CardActions,
   Button,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Fade } from "react-reveal";
 const useStyles = makeStyles((theme) => ({
   details: {
@@ -64,75 +68,63 @@ function Details() {
               style={{
                 borderRadius: 16,
                 border: 1,
-                background: "#aeaeae",
+                background: "linear-gradient(-35deg, #6fabf6 10%, #9fd1f7 60%)",
               }}
             >
               <CardContent>
-                <Typography
-                  className={classes.title}
-                  color="textSecondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
                 <Typography variant="h5" component="h2">
-                  TEXT
+                  Inspirations:
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2" component="p">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
+                  Cinema, technology, graphic arts and videogames.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Accordion
+                  style={{
+                    background: "transparent",
+
+                    borderRadius: 16,
+                    border: 1,
+                    margin: "10px",
+                    boxShadow: "0 0px 0px 0px ",
+                  }}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Button size="small">Learn More</Button>
+                  </AccordionSummary>
+
+                  <AccordionDetails>
+                    <Typography
+                      style={{
+                        fontSize: 10,
+                      }}
+                      variant="caption"
+                      align="left"
+                    >
+                      Some of my Favorites:
+                      <ul>
+                        <li>Holy Mountain (1973)</li>
+                        <li>Enter The Void (2009)</li>
+                        <li>2001: A Space Odyssey (1968)</li>
+                        <li>Stalker (1979)</li>
+                        <li>Nier: Automata</li>
+                        <li>Devil May Cry 3</li>
+                        <li>We ❤ Katamari</li>
+                        <li>Final Fantasy X</li>
+                      </ul>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
               </CardActions>
             </Card>
           </Fade>
         </Box>
       </Grid>
-      {/* <Grid item xs={6}>
-        <Fade right delay={900}>
-          <Box
-            // className={classes.details}
-            ////////////
-            // boxShadow={3}
-            m={2}
-            // p={1}
-          >
-            <Fade right delay={900}>
-              <Card className={classes.root}>
-                <CardContent>
-                  <Typography
-                    className={classes.title}
-                    color="textSecondary"
-                    gutterBottom
-                  >
-                    Word of the Day
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    TEXT
-                  </Typography>
-                  <Typography className={classes.pos} color="textSecondary">
-                    adjective
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            </Fade>
-          </Box>
-        </Fade>
-      </Grid> */}
     </Grid>
   );
 }

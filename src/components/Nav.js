@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
-import homebutton from "../assets/logo192.png";
+
 const useStyles = makeStyles((theme) => ({
   center: {
     alignItems: "center",
@@ -26,44 +26,58 @@ export default function ButtonAppBar() {
         style={{
           borderRadius: 16,
           border: 1,
-          // background: "linear-gradient(35deg, #2e2631 40%, #f5ab29 90%)",
-          background: "#aeaeae",
+          background: "linear-gradient(-35deg, #6b65bd 10%, #3f3c68 60%)",
+          // background: "#aeaeae",
         }}
       >
         <Toolbar>
           <Box m={2}>
-            <Link activeClass="active" to="welcome" spy={true} smooth={true}>
-              <img
-                style={{
-                  // borderRadius: 16,
-                  // border: 1,
-                  // display: "inline",
-                  // alignItem: "center",
-                  // justifyContent: "left",
-                  // maxWidth: "500",
-                  // height: "auto",
-                  // works
-                  maxHeight: "20px",
-                  width: "auto",
-                }}
-                src={homebutton}
-              ></img>
-            </Link>
+            <Typography
+              style={{
+                fontSize: 10,
+              }}
+              variant="overline"
+            >
+              <Link activeClass="active" to="welcome" spy={true} smooth={true}>
+                Welcome
+              </Link>
+            </Typography>
           </Box>
           <Box m={2}>
-            <Link to="details" spy={true} smooth={true}>
-              About
-            </Link>
+            <Typography
+              style={{
+                fontSize: 10,
+              }}
+              variant="overline"
+            >
+              <Link activeClass="active" to="welcome" spy={true} smooth={true}>
+                About
+              </Link>
+            </Typography>
           </Box>
           <Box m={2}>
-            <Link to="resume" spy={true} smooth={true}>
-              Resume
-            </Link>
+            <Typography
+              style={{
+                fontSize: 10,
+              }}
+              variant="overline"
+            >
+              <Link activeClass="active" to="footer" spy={true} smooth={true}>
+                Resume
+              </Link>
+            </Typography>
           </Box>
           <Box m={2}>
-            <Link to="contact" spy={true} smooth={true}>
-              Contact
-            </Link>
+            <Typography
+              style={{
+                fontSize: 10,
+              }}
+              variant="overline"
+            >
+              <Link activeClass="active" to="footer" spy={true} smooth={true}>
+                Contact
+              </Link>
+            </Typography>
           </Box>
         </Toolbar>
       </AppBar>

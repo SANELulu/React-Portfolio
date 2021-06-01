@@ -8,9 +8,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-
+import Tools from "./Tools";
 import PreviousWorks from "./PreviousWorks";
-// import gif1 from "";
+import miamiLogo from "../assets/miami.png";
+import Footer from "./Footer";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -30,15 +31,10 @@ function Resume() {
   const classes = useStyles();
 
   return (
-    // <Grid
-    //   style={{
-    //     background: "linear-gradient(180deg, #aeaeae 60%, #2a292b 90%)",
-    //   }}
-    // >
     <div>
       <Card
         style={{
-          background: "linear-gradient(180deg, #aeaeae 60%, #2a292b 90%)",
+          background: "linear-gradient(180deg, #232024 60%, #201f21 90%)",
           // background: "transparent",
           borderRadius: 0,
           border: 0,
@@ -46,16 +42,33 @@ function Resume() {
       >
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Graduate from University of Miami Coding Bootcamp 2020-2021
+            <Typography
+              gutterBottom
+              variant="overline"
+              component="h2"
+              align="center"
+              color="primary"
+            >
+              Graduate from University of Miami Fullstack Coding Bootcamp
+              2020-2021
+              <Grid alignItems="right">
+                <img
+                  style={{
+                    maxHeight: "20px",
+                  }}
+                  src={miamiLogo}
+                ></img>
+              </Grid>
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Tools />
+            <Typography variant="body2" color="primary" component="p">
               Previous Works:
             </Typography>
             <PreviousWorks />
           </CardContent>
         </CardActionArea>
         <CardActions></CardActions>
+        <Footer />
       </Card>
     </div>
   );
