@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/React-Portfolio/static/js/main.99f0959d.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.99f0959d.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.316528eb.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.316528eb.js.map",
+    "static/js/2.8c8b1415.chunk.js": "/React-Portfolio/static/js/2.8c8b1415.chunk.js",
+    "static/js/2.8c8b1415.chunk.js.map": "/React-Portfolio/static/js/2.8c8b1415.chunk.js.map",
+    "static/js/3.467f5ff1.chunk.js": "/React-Portfolio/static/js/3.467f5ff1.chunk.js",
+    "static/js/3.467f5ff1.chunk.js.map": "/React-Portfolio/static/js/3.467f5ff1.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/js/2.8c8b1415.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.8c8b1415.chunk.js.LICENSE.txt",
+    "static/media/AI.3afe1ddd.png": "/React-Portfolio/static/media/AI.3afe1ddd.png",
+    "static/media/JavaScript-Logo.b08bf619.png": "/React-Portfolio/static/media/JavaScript-Logo.b08bf619.png",
+    "static/media/Project2App.4fb25465.gif": "/React-Portfolio/static/media/Project2App.4fb25465.gif",
+    "static/media/covid-clean-gif.63cd130e.gif": "/React-Portfolio/static/media/covid-clean-gif.63cd130e.gif",
+    "static/media/employeeDirectory.2e918204.gif": "/React-Portfolio/static/media/employeeDirectory.2e918204.gif",
+    "static/media/expressNoteTakerApp.5b61e0fa.gif": "/React-Portfolio/static/media/expressNoteTakerApp.5b61e0fa.gif",
+    "static/media/html.33745ead.png": "/React-Portfolio/static/media/html.33745ead.png",
+    "static/media/iglogo.54f89afb.png": "/React-Portfolio/static/media/iglogo.54f89afb.png",
+    "static/media/lulu.1892293a.jpg": "/React-Portfolio/static/media/lulu.1892293a.jpg",
+    "static/media/miami.880f8692.png": "/React-Portfolio/static/media/miami.880f8692.png",
+    "static/media/mongo.151b0a7d.png": "/React-Portfolio/static/media/mongo.151b0a7d.png",
+    "static/media/mysqllogo.2ee7f73b.png": "/React-Portfolio/static/media/mysqllogo.2ee7f73b.png",
+    "static/media/node.774d4981.png": "/React-Portfolio/static/media/node.774d4981.png",
+    "static/media/photoshoplogo.265e0948.png": "/React-Portfolio/static/media/photoshoplogo.265e0948.png",
+    "static/media/reactlogo.73ac128a.png": "/React-Portfolio/static/media/reactlogo.73ac128a.png",
+    "static/media/weatherApp.8e5bc657.gif": "/React-Portfolio/static/media/weatherApp.8e5bc657.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.316528eb.js",
+    "static/js/2.8c8b1415.chunk.js",
+    "static/js/main.99f0959d.chunk.js"
+  ]
+}
